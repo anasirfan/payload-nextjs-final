@@ -1,0 +1,73 @@
+.main_container {
+    text-align: center;
+    background-color: #000;
+}
+
+.main_container_content {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container_start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.main_container_start_img {
+    width: 610px;
+    height: 87.881px;
+}
+
+.main_container_start_heading {
+    color: #FFF;
+    /* font-family: "SangBleu Sans"; */
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    text-transform: uppercase;
+}
+
+.main_container_start_para {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+}
+
+.main_container_start_btn {
+    color: #FFF;
+    background-color: #000;
+    padding: 24px 70px;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 720px) {
+    .main_container_content {
+        padding: 80px 20px;
+    }
+    
+    .main_container_start {
+        width: 100%;
+    }
+   
+    .main_container_start_img {
+        width: 100%;
+    }
+
+    .main_container_start_para {
+        font-size: 14px;
+    }
+
+}

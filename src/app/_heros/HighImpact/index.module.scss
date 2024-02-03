@@ -1,0 +1,120 @@
+@import '../../_css/queries.scss';
+
+
+
+.hero {
+  padding-top: 0;
+  position: relative;
+  overflow: hidden;
+
+  @include mid-break {
+    padding-top: var(--gutter-h);
+  }
+}
+
+.hero_img {
+  margin-top: -595px;
+  height: 900px;
+  fill: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("https://payload-nextjs.payloadcms.app/media/Untitled%20design%20(2)-1.svg"), lightgray 0px -27.369px / 99.861% 106.082% no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.media {
+  width: 100%;
+  left: 0px;
+  margin-top: 0;
+  position: relative;
+  height: 400px;
+  background-image: url('');
+
+  @include mid-break {
+    left: 0;
+    margin-top: var(--base);
+    margin-left: calc(var(--gutter-h) * -1);
+    // width: calc(100% + var(--gutter-h) * 2);
+  }
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding-top: var(--base);
+  flex-wrap: wrap;
+  margin: calc(var(--base) * -.5);
+
+  &>* {
+    margin: calc(var(--base) / 2);
+  }
+}
+
+.caption {
+  margin-top: var(--base);
+  color: var(--theme-elevation-500);
+  left: calc(var(--gutter-h) / 2);
+  width: calc(100% - var(--gutter-h));
+  position: relative;
+
+  @include mid-break {
+    left: var(--gutter-h);
+  }
+}
+
+.content {
+  position: relative;
+
+  .hero_title{
+    color: var(--Gray-6, #F2F2F2);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    /* Large Title */
+    font-family: "SangBleu Sans";
+    font-size: 72px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    z-index: 9;
+    position: relative;
+    margin-left: 85px;
+    margin-top: 180px;
+    width: 604px;
+
+  }
+  @media screen and (max-width: 768px) {
+    .hero_title {
+      margin-left: 0px;
+      width: 100%; /* Adjust width as needed */
+      font-size: 50px !important;
+      line-height: 60px;
+      margin-top: 15px;
+      text-align: center;
+    }
+    .media {
+      width: auto;
+
+    }
+    .hero_img {
+      margin-top: -640px;
+    }
+    .caption{
+      span{
+        margin-left: 0px;
+      }
+    }
+    .caption{
+      padding: 0px 30px 0px 60px;
+      text-align: left;
+    }
+  }
+  .caption{
+    span{
+      position: relative;
+      z-index: 9;
+      color: #fff;
+      margin-left: 20px;
+    }
+  }
+}
