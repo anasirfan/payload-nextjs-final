@@ -46,8 +46,8 @@ export default async function Page({ params: { slug = 'home' } }) {
   // you should delete this code once you have a home page in the CMS
   // this is really only useful for those who are demoing this template
   if (!page && slug === 'home') {
-    // page = staticHome
-    return notFound()
+    page = staticHome
+    // return notFound()
   }
 
   if (!page) {
